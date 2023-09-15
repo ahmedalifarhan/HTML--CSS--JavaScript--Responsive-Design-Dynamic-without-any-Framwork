@@ -1,0 +1,478 @@
+/* Start Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* height: 5000px; */
+}
+/* End Rules */
+/* Start header */
+.header{
+    background-image: url(../images/bg_05.jpg);
+    background-size: cover;
+    position: relative;
+    min-height: 600px;
+}
+.header .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: rgb(0 150 136 / 20%);
+}
+.header .overlay h1{
+    font-size: 60px;
+    margin-top: 100px;
+}
+.header .overlay .plan{
+    border: 2px solid #fff;
+    font-size: 24px;
+    width: 48%;
+    float: left;
+    padding: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.header .overlay .order{
+    border: 2px solid #fff;
+    font-size: 24px;
+    padding: 20px;
+    margin: 30px 1% 0;
+}
+/* End header */
+/* Start Features */
+.features {
+    padding: 30px 0;
+}
+.features .h1{
+    font-size: 50px;
+    color: #555;
+}
+.features .feat {
+    color: #555;
+    padding: 0 20px 8px;
+    margin-bottom: 40px;
+}
+.features .feat h2{
+    margin: 10px 0 5px 25px;
+}
+.features .feat p{
+    line-height: 1.6;
+    margin: 0;
+    background-color: #dddddd2e;
+    padding: 25px;
+    border-radius: 6px;
+}
+@media (min-width:992px){
+    .features .feat {
+    width: calc(100% / 3) !important;
+    }
+}
+@media (min-width:768px){
+    .features .feat:first-of-type {
+    width: 100%;
+    }
+    .features .feat:not(:first-of-type) {
+    width: 50%;
+    }
+}
+@media (max-width:768px){
+    .features .feat {
+        text-align: center;
+    }
+}
+/* End Features */
+/* Start About Us */
+.about-us{
+    background-color: #dddddd2e;
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+.about-us .container .h1{
+    font-size: 50px;
+    color: #848484;
+}
+
+.responsive-p{
+    line-height: 1.8;
+    color: #848484;
+    font-size: 22px;
+}
+/* End About Us */
+/* Start our work */
+.our-works .image{
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.our-works .image:hover img{
+    transform: rotate(3deg) scale(1.1);
+}
+.our-works .image .caption{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+    border-radius: 4px;
+    height: 90px;
+    text-align: center;
+}
+.our-works .image .caption h4{
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+.our-works .image .caption p{
+    color: cornflowerblue
+}
+.our-works .image:hover{
+    position: relative;
+    overflow: hidden;
+}
+.our-works .image:hover .caption{
+    bottom: 0;
+}
+/* End our work */
+/* Start pricing */
+.pricing-table {
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0;
+}
+.pricing-table .h1{
+    margin: 0 0 40px;
+    font-size:50px;
+}
+.pricing-table .pricing-plan{
+    width: calc(100% / 3);
+    border: 3px solid #fff;
+    position: relative;
+}
+.pricing-table .pricing-plan h3{
+    margin: 10 0 10px;
+    font-size: 26px;
+}
+.pricing-table .pricing-plan .pricing{
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #bfbfbf;
+}
+.pricing-table .pricing-plan ul{
+    line-height: 2;
+    font-size: 18px;
+}
+/* End pricing */
+/* Start What They Say */
+.they-say{
+    padding: 50px 0;
+}
+.they-say .h1{
+    font-size: 50px;
+    margin: 0 0 20px;
+    color: #555;
+}
+.they-say .person-say{
+    background-color: #eee;
+    padding: 20px;
+    margin: 0 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.they-say .person-say:first-of-type{
+    width: 80%;
+    margin-left: 10%;
+}
+.they-say .person-say:not(:first-of-type){
+    width: 48%;
+    margin-left: 1%;
+}
+.they-say .person-say .img {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+.they-say .person-say .img img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin: 10px 0;
+}
+.they-say .person-say h3{
+    margin:10px 0 ;
+}
+.they-say .person-say p{
+    max-width: calc(100% - 160px);
+    margin: 0;
+}
+/* End What They Say */
+/* Start Information */
+.information{
+    background-color: #eee;
+    padding: 30px 0;
+}
+.information .h1{
+    font-size: 50px;
+    color: #848484;
+}
+.information .info-list li{
+    display: inline-block;
+    background-color: #ddd;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.information .info-list li.active{
+    background-color: #fff;
+    color: #45a4b0;
+}
+.information .info-content > div{
+    padding: 20px;
+    background-color: #fff;
+    line-height: 2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.information .info-content {
+    margin-bottom: 30px;
+}
+.information .info-content > div:not(:first-of-type){
+    display: none;
+}
+/* End Information */
+/* Start Footer */
+.footer{
+    background-color: #333;
+    color: #eee;
+}
+.footer .copyright,
+.footer .design{
+    padding: 20px;
+    text-align: center;
+}
+/* End Footer */
+@media (max-width:767px) {
+    .header .overlay .plan{
+        float: none;
+        margin: 0 auto 20px ;
+    }
+    .responsive-p{
+        text-align: center;
+        font-size: 18px !important
+    }.information .info-list li{
+        display: block;
+        margin: 8px 0;
+        border-radius: 8px;
+    }
+    .information .info-content > div{
+        border-radius: 8px;
+    }
+}
+@media (max-width:420px) {
+    h1{
+        margin-top: 20px !important;
+        font-size: 40px !important;
+    }
+    .container{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+        .header .overlay .plan{
+        float: none;
+        margin: 0 auto 20px ;
+        font-size: 22px;
+    }
+}
+@media (max-width:767px) {
+    .visible-xs{
+        display: none !important
+    }
+    .our-works .image{
+    width: 100%;
+}
+    .pricing-table .pricing-plan{
+    width: 100%;
+    margin-bottom: 25px;
+}    .pricing-table .pricing-plan.Plus{
+    top: 300px;
+}
+    .pricing-table .pricing-plan.Premium{
+    top: -300px;
+}
+    .they-say .person-say:first-of-type{
+    width: 100%;
+    margin-left: 0;
+}
+    .they-say .person-say:not(:first-of-type){
+    width: 100%;
+    margin-left: 0;
+}    .they-say .person-say:first-of-type{
+    width: 97%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+    .they-say .person-say:not(:first-of-type){
+    width: 100%
+}
+    .they-say .person-say .img {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+}
+    .they-say .person-say h3 {
+    float: none;
+    text-align: center;
+    margin: 20px auto;
+}
+    .they-say .person-say p {
+    float: none;
+    max-width: 100% !important;
+}
+}
+@media (min-width:768px) and (max-width: 991px){
+    .container{
+        width: 750px;
+    }
+        .visible-sm{
+        display: block !important
+    }.our-works .image{
+    width: 50%;
+    }
+    .pricing-table .pricing-plan:not(.Mega){
+    margin-right: 1%;
+}
+    .pricing-table .pricing-plan{
+    width: calc(98% / 3);
+}
+    .pricing-table .pricing-plan.Plus{
+    left: calc(101% / 3);
+}
+    .pricing-table .pricing-plan.Premium{
+    left: calc(-101% / 3);
+}    .they-say .person-say:first-of-type{
+    width: 97%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+    .they-say .person-say:not(:first-of-type){
+    width: 48%;
+    margin-left: 1%;
+}
+    .they-say .person-say:not(:first-of-type) .img {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+}
+    .they-say .person-say:not(:first-of-type) h3 {
+    float: none;
+    text-align: center;
+    margin: 20px auto;
+}
+    .they-say .person-say:not(:first-of-type) p {
+    float: none;
+    max-width: 100% !important;
+}
+}
+@media (min-width:992px) and (max-width: 1199px){
+    .container{
+        width: 970px;
+    }
+        .visible-md{
+        display: block !important
+    }
+    .our-works .image{
+    width: calc(100% / 3);
+}
+    .they-say .person-say:first-of-type{
+    width: 80%;
+    margin-left: 10%;
+}
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+        .visible-lg{
+        display: block !important
+    }
+    .our-works .image{
+    width: 25%;
+}
+}
+
+
+
+
+
+
+
+
+
+/* Start My Framework */
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    clear:both;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: block;
+}
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
+.h1{
+    font-size: 2em;
+}
+.h2{
+    font-size: 1.5em;
+}
+.responsive-p{
+    text-align: center;
+    font-size: 18px !important
+}
+.responsive-img{
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+/* .responsive-img:hover{
+    width: 100%;
+    border-radius: 4px;
+} */
+.classic-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* margin-bottom: 10px; */
+}
+.img-circle{
+    border-radius: 50%;
+}
+.img-thumbnail{
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid white;
+}
+/* End My Framework */
